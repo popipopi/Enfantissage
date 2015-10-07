@@ -1,11 +1,8 @@
-.bar-header {
-   height: 10%;
+#title {
+  text-align: center;
+  font-size: 500%;
 }
 
-h1.title {
-  font-size: 300% !important;
-}
-
-.bar-header .title {
-   line-height: 220%;
+.ui-bar {
+  background-color: 
 }
