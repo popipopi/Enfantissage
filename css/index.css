@@ -1,0 +1,11 @@
+.bar-header {
+   height: 10%;
+}
+
+h1.title {
+  font-size: 300% !important;
+}
+
+.bar-header .title {
+   line-height: 220%;
+}
