@@ -1,8 +1,20 @@
-#title {
-  text-align: center;
-  font-size: 500%;
+#header {
+  font-size: 300%;
+  background-color: #444444;
+  color: white;
 }
 
-.ui-bar {
-  background-color: 
+#footer {
+  background-color: #37DC89;
+  color: white;
+}
+
+[data-role=page] {
+  height: 100% !important; position:relative !important;
+}
+[data-role=footer] {
+  bottom:0; 
+  position:absolute !important; 
+  top: auto !important; 
+  width:100%;
 }
