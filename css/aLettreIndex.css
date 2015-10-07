@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Apprentissage</title> 
-    <link href="ionic-v1.1.0/css/ionic.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/apprentissage.css"/>
-    
-  </head>
+#button_play{
+
+}
+
+#regle{
+  margin:1.5%;
+  font-family: Comic Sans MS;
   
-    <body>
-      
-    </body>
-</html>
+}
