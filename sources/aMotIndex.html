@@ -5,7 +5,7 @@
   <title>Enfantissage</title>
   <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="../css/index.css"/>
-  <link rel="stylesheet" href="../css/aLettreIndex.css"/>
+  <link rel="stylesheet" href="../css/aMotIndex.css"/>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/jquery.mobile-1.4.5.min.js"></script>
   </head>
@@ -19,10 +19,23 @@
       
       
       <div class="ui-body ui-body-a ui-corner-all" id="regle">
-	• Ecoute le son de chaque lettre en appuyant sur son image <br/>
-	• Tu verra apparaitre les differentes façons d'écrire cette lettre <br/>
-	• Pour un diaporama de tout l'alphabet avec leurs sons, tu peux cliquer sur le bouton diaporama en bas a gauche à tout moment. 
+	Choisis ton thème pour apprendre de nouveaux mot !
       </div>
+      
+      <ul data-role="listview" data-inset="true">
+            <li><a href="#">
+                <img src="../images/animaux.jpg" class="ui-li-thumb">
+                <h2 class="ui-li-aside">Animaux</h2>
+            </a></li>
+            <li><a href="#">
+                <img src="../couleurs.jpg" class="ui-li-thumb">
+                <h2 class="ui-li-aside">Couleurs</h2>
+            </a></li>
+            <li><a href="#">
+                <img src="../images/fruits.jpg" class="ui-li-thumb">
+                <h2 class="ui-li-aside">Fruits</h2>
+            </a></li>
+        </ul>
       
       <button class="ui-btn ui-shadow" id="button_play">Jouer ✔</button>
       <button class="ui-btn ui-shadow" onclick="self.location.href='../index.html'" id="button_play">Retour à la liste des jeux ✘</a> </button>
