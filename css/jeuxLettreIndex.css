@@ -1,0 +1,12 @@
+#regle{
+  margin:1.5%;
+  font-family: Comic Sans MS;
+}
+
+.ui-block-a, .ui-block-b {
+  border: 1px solid black;
+  height: 250%;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+}
