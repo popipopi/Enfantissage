@@ -1,13 +1,12 @@
 #regle{
   margin:1.5%;
   font-family: Comic Sans MS;
-<<<<<<< HEAD
-}
-=======
   font-size:120%;
 }
 
-br{
-  padding:10%
+.ui-block-a,.ui-block-b{
+  border: 1px solid black;
+  height:250%;
+
+
 }
->>>>>>> popipopi/master
