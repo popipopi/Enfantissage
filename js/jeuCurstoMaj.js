@@ -3,13 +3,13 @@ var total = 0;
   
 function checkLetter(document, id) {
   total ++;
-  if ($("#lettreMaj").text() == id) {
+  if ($("#lettreCurs").attr("val") == id) {
     score ++;
     generateResults(document, true);
   } else {
     generateResults(document, false);
   }
-  var element = document.getElementById("lettreMaj");
+  var element = document.getElementById("lettreCurs");
   element.parentNode.removeChild(element);
   randomLetter(document);
   
@@ -19,13 +19,14 @@ function checkLetter(document, id) {
 };
 
 function randomLetter(document) {
-  var lettres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lettres = "abcdefghijklmnopqrstuvwxyz";
   var rand_letter = lettres.charAt(Math.floor(Math.random() * lettres.length));
-  var h1 = document.createElement('h1');
-  h1.id = "lettreMaj";
-  var text = document.createTextNode(rand_letter);
-  h1.appendChild(text);
-  document.getElementById("lettreMajDiv").appendChild(h1);
+  var img = document.createElement('img');
+  img.id = "lettreCurs";
+  var path = "../images/lettresCursives/" + rand_letter + "Cursif.png";
+  img.setAttribute("src", path);
+  img.setAttribute("val", rand_letter);
+  document.getElementById("lettreCursDiv").appendChild(img);
 };
 
 function generateResults(document, result) {

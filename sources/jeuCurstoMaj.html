@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8"/>
+  <title>Enfantissage</title>
+  <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+  <link rel="stylesheet" href="../css/jeuCurstoMaj.css"/>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../js/jeuCurstoMaj.js"></script>
+  </head>
+  
+  <body>
+    <div data-role="page">
+    
+      <div data-role="header" id="header">
+	<h1>Enfantissage</h1>
+	<a href="jeuxLettreIndex.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all"></a>
+      </div>
+      
+      <div class="ui-content">
+        <table align="center">
+          <tr id="results">
+            <td> Résultat: </td>
+          </tr>
+        </table>
+	<div id="lettreCursDiv" align="center">
+	  <script type="text/javascript">randomLetter(document);</script>
+	</div>
+	<div align="center">
+	  <table>
+	    <tr>
+	      <td><button id="a" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'a')">A</button></td>
+	      <td><button id="b" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'b')">B</button></td>
+	      <td><button id="c" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'c')">C</button></td>
+	      <td><button id="d" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'd')">D</button></td>
+	      <td><button id="e" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'e')">E</button></td>
+	      <td><button id="f" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'f')">F</button></td>
+	      <td><button id="g" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'g')">G</button></td>
+	      <td><button id="h" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'h')">H</button></td>
+	    </tr>
+	    <tr>
+	      <td><button id="i" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'i')">I</button></td>
+	      <td><button id="j" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'j')">J</button></td>
+	      <td><button id="k" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'k')">K</button></td>
+	      <td><button id="l" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'l')">L</button></td>
+	      <td><button id="m" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'm')">M</button></td>
+	      <td><button id="n" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'n')">N</button></td>
+	      <td><button id="o" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'o')">O</button></td>
+	      <td><button id="p" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'p')">P</button></td>
+	    </tr>
+	    <tr>
+	      <td><button id="q" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'q')">Q</button></td>
+	      <td><button id="r" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'r')">R</button></td>
+	      <td><button id="s" class="ui-btn ui-btn-c" onclick="checkLetter(document, 's')">S</button></td>
+	      <td><button id="t" class="ui-btn ui-btn-c" onclick="checkLetter(document, 't')">T</button></td>
+	      <td><button id="u" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'u')">U</button></td>
+	      <td><button id="v" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'v')">V</button></td>
+	      <td><button id="w" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'w')">W</button></td>
+	      <td><button id="x" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'x')">X</button></td>
+	    </tr>
+	    <tr>
+	      <td><button id="y" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'y')">Y</button></td>
+	      <td><button id="z" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'z')">Z</button></td>
+	    </tr>
+	  </table>
+	</div>
+
+      </div>
+      <div data-role="footer" id="footer">
+	<h5> Copyright © Pauline et Jacques.</h5>
+      </div>
+    </div>
+  </body>
+  
+</html>

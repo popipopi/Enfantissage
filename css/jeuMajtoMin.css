@@ -2,3 +2,9 @@
   font-size: 300%;
   text-align: center;
 }
+
+.button {
+  width: 10%;
+  float:left;
+  margin: 5px;
+}
