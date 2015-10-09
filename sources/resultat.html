@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8"/>
+  <title>Enfantissage</title>
+  <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../js/jeuMajtoMin.js"></script>
+  </head>
+  
+  <body>
+    <div data-role="page">
+    
+      <div data-role="header" id="header">
+	<h1>Enfantissage</h1>
+      </div>
+      <div class="ui-content">
+        <div id="resultat" align="center">
+          <script>Score();</script>
+        </div>
+        
+        <div>
+          <button class="ui-btn ui-shadow" onclick="self.location.href='jeuMajtoMin.html'">Rejouer</button>
+          <button class="ui-btn ui-shadow" onclick="self.location.href='jeuxLettreIndex.html'">Menu</button>
+          <button class="ui-btn ui-shadow" onclick="self.location.href='../index.html'">Accueil</button>
+        </div>
+      </div>
+      <div data-role="footer" id="footer">
+	<h5> Copyright © Pauline et Jacques.</h5>
+      </div>
+    </div>
+  </body>
+  
+</html>
