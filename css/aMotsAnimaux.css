@@ -1,0 +1,11 @@
+.imageSize{
+  width: 30%; 
+  height: 30%;
+}
+
+#result{
+  text-align: center;
+  margin:1.5%;
+  font-family: Comic Sans MS;
+  font-size:110%;
+}
