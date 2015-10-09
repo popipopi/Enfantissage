@@ -11,13 +11,15 @@
   </head>
   
   <body>
-    <div data-role="page">
-    
+
+    <div data-url="demo-page" data-role="page" id="demo-page" class="my-page">
       <div data-role="header" id="header">
 	<h1>Enfantissage</h1>
-      </div>
-      
-      
+<a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+    </div><!-- /header -->
+    
+<div role="main" class="ui-content">
+
       <div class="ui-body ui-body-a ui-corner-all" id="regle">
 	Choisis ton thème pour apprendre de nouveaux mot !
       </div>
@@ -25,17 +27,22 @@
       <ul data-role="listview" data-inset="true">
             <li><a href="#">
                 <img src="../images/animaux.jpg" class="ui-li-thumb">
-                <h2 class="ui-li-aside">Animaux</h2>
+                <h2>Animaux</h2>
+                <p>Animaux</p>
             </a></li>
             <li><a href="#">
-                <img src="../couleurs.jpg" class="ui-li-thumb">
-                <h2 class="ui-li-aside">Couleurs</h2>
+                <img src="../images/couleurs.jpg" class="ui-li-thumb">
+		<h2>Couleurs</h2>
+                <p>Couleurs</p>
             </a></li>
             <li><a href="#">
                 <img src="../images/fruits.jpg" class="ui-li-thumb">
-                <h2 class="ui-li-aside">Fruits</h2>
+                <h2>Fruits</h2>
+                <p>Fruits</p>
             </a></li>
         </ul>
+            </div><!-- /content -->
+
       
       <button class="ui-btn ui-shadow" id="button_play">Jouer ✔</button>
       <button class="ui-btn ui-shadow" onclick="self.location.href='../index.html'" id="button_play">Retour à la liste des jeux ✘</a> </button>
@@ -43,7 +50,7 @@
       <div data-role="footer" id="footer">
 	<h5> Copyright Pauline et Jacques.</h5>
       </div>
-    </div>
   </body>
+  </div>
   
 </html>
