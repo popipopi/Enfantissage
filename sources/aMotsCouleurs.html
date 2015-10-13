@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8"/>
+  <meta charset="utf-8"></meta>
+  <title>Enfantissage</title>
+  <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+  <link rel="stylesheet" href="../css/aMotsAffichage.css"/>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="../js/aMotsAffichage.js"></script>
+  </head>
+  
+  <body>
+    <div data-role="page">
+    
+      <div data-role="header" id="header">
+	<h1>Enfantissage</h1>
+	<a href="aMotsIndex.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false"></a>
+      </div>
+      
+      <div class="ui-body ui-body-a ui-corner-all" align="center">
+      <table id="result">
+	<tr>
+	  <td>Appuie sur une image pour voir et ecouter le mot</td>
+	</tr>
+	<tr id="text_results"></tr>
+      </table>
+      </div>
+        
+      <div class="ui-content">
+	<div align="center">
+	  <table>
+	    <tr>
+	      <td><a id="rouge" href="javascript:affichageMot('rouge')"><img class="imageSize" src="../images/aMotsCouleurs/rouge.png"/></a></td>
+	      <td><a id="bleu" href="javascript:affichageMot('bleu')"><img class="imageSize" src="../images/aMotsCouleurs/bleu.png"/></a></td>
+	      <td><a id="rose" href="javascript:affichageMot('rose')"><img class="imageSize" src="../images/aMotsCouleurs/rose.png"/></a></td>
+	   </tr>
+	    <tr>
+	      <td><a id="blanc" href="javascript:affichageMot('blanc')"><img class="imageSize" src="../images/aMotsCouleurs/blanc.png"/></a></td>
+	      <td><a id="jaune" href="javascript:affichageMot('jaune')"><img class="imageSize" src="../images/aMotsCouleurs/jaune.png"/></a></td>
+	      <td><a id="vert" href="javascript:affichageMot('vert')"><img class="imageSize" src="../images/aMotsCouleurs/vert.png"/></a></td>
+
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td><a id="noir" href="javascript:affichageMot('noir')"><img class="imageSize" src="../images/aMotsCouleurs/noir.png"/></a></td>
+
+	    </tr>
+	  </table>
+	</div>
+
+      </div>
+      <div data-role="footer" id="footer">
+	<h5> Copyright © Pauline et Jacques.</h5>
+      </div>
+    </div>
+  </body>
+  
+</html>
