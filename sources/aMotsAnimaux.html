@@ -6,10 +6,10 @@
   <title>Enfantissage</title>
   <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="../css/index.css"/>
-  <link rel="stylesheet" href="../css/aMotsAnimaux.css"/>
+  <link rel="stylesheet" href="../css/aMotsAffichage.css"/>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/jquery.mobile-1.4.5.min.js"></script>
- <script src="../js/aMotsAnimaux.js"></script>
+ <script src="../js/aMotsAffichage.js"></script>
   </head>
   
   <body>
@@ -17,11 +17,11 @@
     
       <div data-role="header" id="header">
 	<h1>Enfantissage</h1>
-	<a href="aMotsIndex.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all"></a>
+	<a href="aMotsIndex.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false"></a>
       </div>
       
-      <div class="ui-body ui-body-a ui-corner-all" id="regle">
-      <table id="result">
+      <div class="ui-body ui-body-a ui-corner-all" align="center">
+      <table id="result" >
 	<tr>
 	  <td>Appuie sur une image pour voir et ecouter le mot</td>
 	</tr>
@@ -29,25 +29,23 @@
       </table>
       </div>
         
-      <div class="ui-content">
-	<div align="center">
+      <div class="ui-content" align="center">
 	  <table>
 	    <tr>
-	      <td><a id="vache" href="javascript:affichageMot(document,'vache')"><img class="imageSize" src="../images/vache.png" class="ui-li-thumb"></a></td>
-	      <td><a id="hibou" href="javascript:affichageMot(document,'hibou')"><img class="imageSize" src="../images/hibou.png" class="ui-li-thumb"></a></td>
+	      <td><a id="vache" href="javascript:affichageMot('vache')"><img class="imageSize" src="../images/aMotsAnimaux/vache.png"/></a></td>
+	      <td><a id="hibou" href="javascript:affichageMot('hibou')"><img class="imageSize" src="../images/aMotsAnimaux/hibou.png"/></a></td>
 	    </tr>
 	    <tr>
-	      <td><a id="loup" href="javascript:affichageMot(document,'loup')"><img class="imageSize" src="../images/loup.png" class="ui-li-thumb"></a></td>
-	      <td><a id="papillon" href="javascript:affichageMot(document,'papillon')"><img class="imageSize" src="../images/papillon.png" class="ui-li-thumb"></a></td>
+	      <td><a id="loup" href="javascript:affichageMot('loup')"><img class="imageSize" src="../images/aMotsAnimaux/loup.png"/></a></td>
+	      <td><a id="papillon" href="javascript:affichageMot('papillon')"><img class="imageSize" src="../images/aMotsAnimaux/papillon.png"/></a></td>
 
 	    </tr>
 	    <tr>
-	      <td><a id="taureau" href="javascript:affichageMot(document,'taureau')"><img class="imageSize" src="../images/taureau.png" class="ui-li-thumb"></a></td>
-	      <td><a id="zebre" href="javascript:affichageMot(document,'zebre')"><img class="imageSize" src="../images/zebre.png" class="ui-li-thumb"></a></td>
+	      <td><a id="taureau" href="javascript:affichageMot('taureau')"><img class="imageSize" src="../images/aMotsAnimaux/taureau.png"/></a></td>
+	      <td><a id="zebre" href="javascript:affichageMot('zebre')"><img class="imageSize" src="../images/aMotsAnimaux/zebre.png"/></a></td>
 
 	    </tr>
 	  </table>
-	</div>
 
       </div>
       <div data-role="footer" id="footer">
