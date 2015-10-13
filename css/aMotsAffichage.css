@@ -1,10 +1,10 @@
 .imageSize{
   width: 30%; 
   height: 30%;
-  border:1px solid black;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+
 }
 
 #result{
@@ -15,5 +15,9 @@
 }
 
 #text_results{
-  
+  font-size: 235%;
+}
+
+img{
+
 }
