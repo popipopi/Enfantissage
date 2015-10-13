@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Enfantissage</title>
+    <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/jeuAlphabet.css"/>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script>
+      $(document).bind('mobileinit',function(){
+	$.mobile.changePage.defaults.changeHash = false;
+	$.mobile.hashListeningEnabled = false;
+	$.mobile.pushStateEnabled = false;
+      }); 
+    </script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/jeuAlphabet.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="jeuAlphabet">
+
+      <div data-role="header" id="header">
+	<h1>Enfantissage</h1>
+	<a href="jeuxLettreIndex.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all"></a>
+      </div>
+    
+      <div class="ui-content" align="center">
+	<div id="cardPile"> </div>
+	<div id="cardSlots"> </div>
+      </div>
+      <div data-role="footer" id="footer">
+        <h5> Copyright © Pauline et Jacques.</h5>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,7 +1,10 @@
 var score = 0;
 var total = 0;
+var lettres = "abcdefghijklmnopqrstuvwxyz";
+var i = 0;
   
 $(document).ready(function(){
+  lettres = sort(lettres);
   randomLetter();
 });
 
@@ -26,11 +29,24 @@ function checkLetter(document, id) {
   randomLetter();
 };
 
+// Sort randomly the letters of the string put as
+// parameter.
+function sort(lettres) {
+  var sorted_word = "";
+  
+  while (lettres) {
+    var rand_letter = lettres.charAt(Math.floor(Math.random() * lettres.length));
+    sorted_word += rand_letter;
+    lettres = lettres.replace(rand_letter, '');
+  }
+  
+  return sorted_word;
+}
+
 function randomLetter() {
-  var lettres = "abcdefghijklmnopqrstuvwxyz";
-  var rand_letter = lettres.charAt(Math.floor(Math.random() * lettres.length));
-  $("#lettreCurs").attr("src", "../images/lettresCursives/" + rand_letter + "Cursif.png");
-  $("#lettreCurs").attr("val", rand_letter);
+  $("#lettreCurs").attr("src", "../images/lettresCursives/" + lettres[i] + "Cursif.png");
+  $("#lettreCurs").attr("val", lettres[i]);
+  ++i;
 };
 
 function generateResults(document, result) {
