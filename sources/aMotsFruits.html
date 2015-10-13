@@ -18,37 +18,38 @@
 	<h1>Enfantissage</h1>
 	<a href="aMotsIndex.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false"></a>
       </div>
-        <meta charset="utf-8"/>
+
       <div class="ui-body ui-body-a ui-corner-all" align="center">
       <table id="result">
 	<tr>
 	  <td>Appuie sur une image pour voir et ecouter le mot</td>
 	</tr>
 	<tr id="text_results"><td>:)</td></tr>
+	
+	<tr>
+	  <td><audio id="audioPlayer" src="" autoplay controls="controls" style="display:none"></audio></td>
+	</tr>
       </table>
       </div>
         
-      <div class="ui-content">
-	<div align="center">
+	<div class="ui-content" align="center">
 	  <table>
-	    <tr>
-	      <td><a id="Banane" href="javascript:affichageMot('banane')"><img class="imageSize" src="../images/aMotsFruits/banane.png"/></a></td>
-	      <td><a id="Cerises" href="javascript:affichageMot('cerises')"><img class="imageSize" src="../images/aMotsFruits/cerises.png"/></a></td>
+	    <tr align="center">
+	      <td><img class="imageSize" src="../images/aMotsFruits/banane.png" onclick="affichageMot('Banane','Fruits')" onmouseover=""/></td>
+	      <td><img class="imageSize" src="../images/aMotsFruits/cerises.png" onclick="affichageMot('Cerises','Fruits')" onmouseover=""/></td>
 	    </tr>
-	    <tr>
-	      <td><a id="Kiwi" href="javascript:affichageMot('kiwi')"><img class="imageSize" src="../images/aMotsFruits/kiwi.png"/></a></td>
-	      <td><a id="Fraise" href="javascript:affichageMot('fraise')"><img class="imageSize" src="../images/aMotsFruits/fraise.png"/></a></td>
-
+	    <tr align="center">
+	      <td><img class="imageSize" src="../images/aMotsFruits/poire.png" onclick="affichageMot('Poire','Fruits')" onmouseover=""/></td>
+	      <td><img class="imageSize" src="../images/aMotsFruits/fraise.png" onclick="affichageMot('Fraise','Fruits')" onmouseover=""/></td>
 	    </tr>
-	    <tr>
-	      <td><a id="Pomme" href="javascript:affichageMot('pomme')"><img class="imageSize" src="../images/aMotsFruits/pomme.png"/></a></td>
-	      <td><a id="Raisin" href="javascript:affichageMot('raisin')"><img class="imageSize" src="../images/aMotsFruits/raisin.png"/></a></td>
+	    <tr align="center">
+	      <td><img class="imageSize" src="../images/aMotsFruits/pomme.png" onclick="affichageMot('Pomme','Fruits')" onmouseover=""/></td>
+	      <td><img class="imageSize" src="../images/aMotsFruits/raisin.png" onclick="affichageMot('Raisin','Fruits')" onmouseover=""/></td>
 
 	    </tr>
 	  </table>
 	</div>
 
-      </div>
       <div data-role="footer" id="footer">
 	<h5> Copyright © Pauline et Jacques.</h5>
       </div>

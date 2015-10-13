@@ -4,20 +4,21 @@
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   border-radius: 10%;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 #result{
   text-align:center;
   margin:1.5%;
   font-family: Comic Sans MS;
-  font-size:110%;
+  font-size:90%;
 }
 
 #text_results{
-  font-size: 235%;
+  font-size: 180%;
 }
 
 img{
-    border:solid 2px #000000;
+    border:solid 2px #6F6F6F;
+    
 }

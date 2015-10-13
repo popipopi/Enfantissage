@@ -25,32 +25,34 @@
 	  <td>Appuie sur une image pour voir et ecouter le mot</td>
 	</tr>
 	<tr id="text_results"><td>:)</td></tr>
+	
+	<tr>
+	  <td><audio id="audioPlayer" src="" autoplay controls="controls" style="display:none"></audio></td>
+	</tr>
+	
       </table>
       </div>
         
-      <div class="ui-content">
-	<div align="center">
+	<div class="ui-content" align="center">
 	  <table>
-	    <tr>
-	      <td><a id="Rouge" href="javascript:affichageMot('rouge')"><img class="imageSize" src="../images/aMotsCouleurs/rouge.png"/></a></td>
-	      <td><a id="Bleu" href="javascript:affichageMot('bleu')"><img class="imageSize" src="../images/aMotsCouleurs/bleu.png"/></a></td>
-	      <td><a id="Rose" href="javascript:affichageMot('rose')"><img class="imageSize" src="../images/aMotsCouleurs/rose.png"/></a></td>
+	    <tr align="center">
+	      <td><img class="imageSize" src="../images/aMotsCouleurs/rouge.png" onclick="affichageMot('Rouge','Couleurs')" onmouseover=""/></td>
+	      <td><img class="imageSize" src="../images/aMotsCouleurs/bleu.png" onclick="affichageMot('Bleu','Couleurs')" onmouseover=""/></td>
+	     
 	   </tr>
-	    <tr>
-	      <td><a id="Blanc" href="javascript:affichageMot('blanc')"><img class="imageSize" src="../images/aMotsCouleurs/blanc.png"/></a></td>
-	      <td><a id="Jaune" href="javascript:affichageMot('jaune')"><img class="imageSize" src="../images/aMotsCouleurs/jaune.png"/></a></td>
-	      <td><a id="Vert" href="javascript:affichageMot('vert')"><img class="imageSize" src="../images/aMotsCouleurs/vert.png"/></a></td>
+	    <tr align="center">
+	      
+	      <td><img class="imageSize" src="../images/aMotsCouleurs/jaune.png" onclick="affichageMot('Jaune','Couleurs')" onmouseover=""/></td>
+	      <td><img class="imageSize" src="../images/aMotsCouleurs/vert.png" onclick="affichageMot('Vert','Couleurs')" onmouseover=""/></td>
 
 	    </tr>
-	    <tr>
-	      <td></td>
-	      <td><a id="Noir" href="javascript:affichageMot('noir')"><img class="imageSize" src="../images/aMotsCouleurs/noir.png"/></a></td>
-
+	    <tr align="center">
+	      <td><img class="imageSize" src="../images/aMotsCouleurs/marron.png" onclick="affichageMot('Marron','Couleurs')" onmouseover=""/></td>
+	      <td><img class="imageSize" src="../images/aMotsCouleurs/rose.png" onclick="affichageMot('Rose','Couleurs')" onmouseover=""/></td>
 	    </tr>
 	  </table>
-	</div>
-
       </div>
+      
       <div data-role="footer" id="footer">
 	<h5> Copyright © Pauline et Jacques.</h5>
       </div>
