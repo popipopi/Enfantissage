@@ -1,0 +1,16 @@
+#lettreMaj {
+  font-size: 300%;
+  text-align: center;
+}
+
+.button {
+  width: 7%;
+  height: 5%;
+  float: left;
+  margin: 5px 10px;
+  min-width: 50px;
+}
+
+#audioPlayer {
+  margin: 5%;
+}
