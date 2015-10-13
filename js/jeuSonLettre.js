@@ -2,7 +2,7 @@ var score = 0;
 var total = 0;
   
 $(document).ready(function(){
-  randomLetter();
+  randomSon();
 });
 
 $(document).on('pagecreate','#resultat', function() {
@@ -12,24 +12,25 @@ $(document).on('pagecreate','#resultat', function() {
 
 function checkLetter(document, id) {
   total ++;
-  if ($("#lettreMaj").text() == id) {
+  if ($("#audioPlayer").attr("val") == id) {
     score ++;
     generateResults(document, true);
   } else {
     generateResults(document, false);
   }
-    
+  
   if (total >= 10) {
     $.mobile.changePage( "resultat.html", { transition: "slideup", changeHash: false });
   }
   
-  randomLetter();
+  randomSon();
 };
 
-function randomLetter() {
-  var lettres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+function randomSon() {
+  var lettres = "abcdefghijklmnopqrstuvwxyz";
   var rand_letter = lettres.charAt(Math.floor(Math.random() * lettres.length));
-  $("#lettreMaj").text(rand_letter);
+  $("#audioPlayer").attr("src", "../sons/" + rand_letter + "Son.mp3");
+  $("#audioPlayer").attr("val", rand_letter);
 };
 
 function generateResults(document, result) {
