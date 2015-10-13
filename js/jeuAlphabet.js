@@ -10,14 +10,8 @@ $(document).on('pagecreate','#resultat', function() {
 });
 
 function init() {
-  // Hide the success message
-  $('#successMessage').hide();
-  $('#successMessage').css({
-    left: '580px',
-    top: '250px',
-    width: 0,
-    height: 0
-  });
+  lettres = "abcdefghijklmnopqrstuvwxyz";
+  lettres = selectLettres(lettres);
 
   // Reset the game
   correctCards = 0;
@@ -44,6 +38,18 @@ function init() {
       drop: handleCardDrop
     });
   }
+}
+
+// Select 7 following letters in the alphabet.
+function selectLettres(lettres) {
+  var selection = "";
+  var rand_letter = 0;
+  do {
+    rand_letter = Math.floor(Math.random() * lettres.length);
+  } while (rand_letter > lettres.length - 7);
+    
+  selection = lettres.substring(rand_letter, rand_letter + 7);
+  return selection;
 }
 
 // Sort randomly the letters of the string put as
