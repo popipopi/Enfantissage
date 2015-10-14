@@ -20,55 +20,52 @@
   </head>
 
   <body>
-    <div data-role="header" id="header">
-      <h1>Enfantissage</h1>
-      <a href="aLettreIndex.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false" data-inline="true"></a>
-      <a href="../index.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true"></a>
-    </div>
-      
-    <div class="ui-content">
-      <table align="center">
-	<tr align="center" id="result-majuscule"></tr>
-	<tr><td><img  id="result-cursive" src="#" style="display:none"/></td></tr>
-        <tr><td><audio id="audioPlayer" src="" autoplay controls="controls" style="display:none"></audio></td></tr>
-      </table>
-
-      <div align="center">
-	<div class="ui-body ui-body-a ui-corner-all" display="inline-block">
-	  <div class="button"><button  onclick="displayLetter('a')">a</button></div>
-	  <div class="button"><button  onclick="displayLetter('b')">b</button></div>
-	  <div class="button"><button  onclick="displayLetter('c')">c</button></div>
-	  <div class="button"><button  onclick="displayLetter('d')">d</button></div>
-	  <div class="button"><button  onclick="displayLetter('e')">e</button></div>
-	  <div class="button"><button  onclick="displayLetter('f')">f</button></div>
-	  <div class="button"><button  onclick="displayLetter('g')">g</button></div>
-	  <div class="button"><button  onclick="displayLetter('h')">h</button></div>
-	  <div class="button"><button  onclick="displayLetter('i')">i</button></div>
-	  <div class="button"><button  onclick="displayLetter('j')">j</button></div>
-	  <div class="button"><button  onclick="displayLetter('k')">k</button></div>
-	  <div class="button"><button  onclick="displayLetter('l')">l</button></div>
-	  <div class="button"><button  onclick="displayLetter('m')">m</button></div>
-	  <div class="button"><button  onclick="displayLetter('n')">n</button></div>
-	  <div class="button"><button  onclick="displayLetter('o')">o</button></div>
-	  <div class="button"><button  onclick="displayLetter('p')">p</button></div>
-	  <div class="button"><button  onclick="displayLetter('q')">q</button></div>
-	  <div class="button"><button  onclick="displayLetter('r')">r</button></div>
-	  <div class="button"><button  onclick="displayLetter('s')">s</button></div>
-	  <div class="button"><button  onclick="displayLetter('t')">t</button></div>
-	  <div class="button"><button  onclick="displayLetter('u')">u</button></div>
-	  <div class="button"><button  onclick="displayLetter('v')">v</button></div>
-	  <div class="button"><button  onclick="displayLetter('w')">w</button></div>
-	  <div class="button"><button  onclick="displayLetter('x')">x</button></div>
-	  <div class="button"><button  onclick="displayLetter('y')">y</button></div>
-	  <div class="button"><button  onclick="displayLetter('z')">z</button></div>
-	</div>
+    <div align="center" data-role="page" id="aLettre">
+      <div data-role="header" id="header">
+	<h1>Enfantissage</h1>
+	<a href="aLettreIndex.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false" data-inline="true"></a>
+	<a href="../index.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true"></a>
       </div>
-    </div>
-    
-    <button class="ui-btn ui-shadow" onclick="self.location.href='diaporama.html'" id="button_diapo">Voir le diaporama de toutes les lettres</button>
-
-    <div data-role="footer" id="footer">
-      <h5> Copyright © Pauline et Jacques.</h5>
+	
+      <div class="ui-content">
+	<table>
+	  <tr id="result-majuscule"></tr>
+	  <tr><td><img  id="result-cursive" src="#" style="display:none"/></td></tr>
+	  <tr><td><audio id="audioPlayer" src="" autoplay controls="controls" style="display:none"></audio></td></tr>
+	</table>
+	<div id="keyboardContainer">
+	    <div onclick="displayLetter('a')" onmouseover="">a</div>
+	    <div onclick="displayLetter('b')" onmouseover="">b</div>
+	    <div onclick="displayLetter('c')" onmouseover="">c</div>
+	    <div onclick="displayLetter('d')" onmouseover="">d</div>
+	    <div onclick="displayLetter('e')" onmouseover="">e</div>
+	    <div onclick="displayLetter('f')" onmouseover="">f</div>
+	    <div onclick="displayLetter('g')" onmouseover="">g</div>
+	    <div onclick="displayLetter('h')" onmouseover="">h</div>
+	    <div onclick="displayLetter('i')" onmouseover="">i</div>
+	    <div onclick="displayLetter('j')" onmouseover="">j</div>
+	    <div onclick="displayLetter('k')" onmouseover="">k</div>
+	    <div onclick="displayLetter('l')" onmouseover="">l</div>
+	    <div onclick="displayLetter('m')" onmouseover="">m</div>
+	    <div onclick="displayLetter('n')" onmouseover="">n</div>
+	    <div onclick="displayLetter('o')" onmouseover="">o</div>
+	    <div onclick="displayLetter('p')" onmouseover="">p</div>
+	    <div onclick="displayLetter('q')" onmouseover="">q</div>
+	    <div onclick="displayLetter('r')" onmouseover="">r</div>
+	    <div onclick="displayLetter('s')" onmouseover="">s</div>
+	    <div onclick="displayLetter('t')" onmouseover="">t</div>
+	    <div onclick="displayLetter('u')" onmouseover="">u</div>
+	    <div onclick="displayLetter('v')" onmouseover="">v</div>
+	    <div onclick="displayLetter('w')" onmouseover="">w</div>
+	    <div onclick="displayLetter('x')" onmouseover="">x</div>
+	    <div onclick="displayLetter('y')" onmouseover="">y</div>
+	    <div onclick="displayLetter('z')" onmouseover="">z</div>
+	</div>
+	<button class="ui-btn ui-shadow" onclick="self.location.href='diaporama.html'" id="button_diapo">Voir le diaporama de toutes les lettres</button>
+      </div>
+      <div data-role="footer" id="footer">
+	<h5> Copyright © Pauline et Jacques.</h5>
+      </div>
     </div>
   </body>
   

@@ -8,6 +8,6 @@ function displayLetter(letter){
   $("#result-cursive").attr("style","display:initial");
   
   //Play the pronunciation of the corresponding letter 
-  $("#audioPlayer").attr("src", "../sons/" + letter + "Son.mp3");
+  $("#audioPlayer").attr("src", "../sons/sonsLettres/" + letter + "Son.mp3");
   
 }

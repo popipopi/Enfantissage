@@ -19,51 +19,50 @@
   </head>
   
   <body>
-    <div data-role="page" id="jeuSonLettre">
+    <div align="center" data-role="page" id="jeuSonLettre">
     
       <div data-role="header" id="header">
 	<h1>Enfantissage</h1>
-	<a href="jeuxLettreIndex.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all"></a>
+	<a href="jeuxLettreIndex.html" data-ajax="false" class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"></a>
+	<a href="../index.html" data-ajax="false" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
       </div>
       
       <div class="ui-content">
-        <table align="center">
+        <table>
           <tr id="results">
             <td> Résultat: </td>
           </tr>
         </table>
-	<div align="center">
-	  <a onclick="this.firstChild.play()"><audio id="audioPlayer" src=""></audio><img src="../images/playAudio.jpeg"/></a>
+	<div>
+	  <img src="../images/playAudio.jpeg" onclick="this.firstChild.play()" onmouseover=""/><audio id="audioPlayer" src="" autoplay></audio>
 	</div>
-	<div align="center" display="inline-block">
-	  <div class="ui-body ui-body-a ui-corner-all">
-	    <div class="button"><button id="a" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'a')">a</button></div>
-	    <div class="button"><button id="b" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'b')">b</button></div>
-	    <div class="button"><button id="c" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'c')">c</button></div>
-	    <div class="button"><button id="d" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'd')">d</button></div>
-	    <div class="button"><button id="e" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'e')">e</button></div>
-	    <div class="button"><button id="f" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'f')">f</button></div>
-	    <div class="button"><button id="g" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'g')">g</button></div>
-	    <div class="button"><button id="h" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'h')">h</button></div>
-	    <div class="button"><button id="i" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'i')">i</button></div>
-	    <div class="button"><button id="j" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'j')">j</button></div>
-	    <div class="button"><button id="k" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'k')">k</button></div>
-	    <div class="button"><button id="l" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'l')">l</button></div>
-	    <div class="button"><button id="m" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'm')">m</button></div>
-	    <div class="button"><button id="n" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'n')">n</button></div>
-	    <div class="button"><button id="o" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'o')">o</button></div>
-	    <div class="button"><button id="p" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'p')">p</button></div>
-	    <div class="button"><button id="q" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'q')">q</button></div>
-	    <div class="button"><button id="r" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'r')">r</button></div>
-	    <div class="button"><button id="S" class="ui-btn ui-btn-c" onclick="checkLetter(document, 's')">s</button></div>
-	    <div class="button"><button id="T" class="ui-btn ui-btn-c" onclick="checkLetter(document, 't')">t</button></div>
-	    <div class="button"><button id="u" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'u')">u</button></div>
-	    <div class="button"><button id="v" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'v')">v</button></div>
-	    <div class="button"><button id="w" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'w')">w</button></div>
-	    <div class="button"><button id="x" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'x')">x</button></div>
-	    <div class="button"><button id="y" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'y')">y</button></div>
-	    <div class="button"><button id="z" class="ui-btn ui-btn-c" onclick="checkLetter(document, 'z')">z</button></div>
-	</div>
+	<div id="keyboardContainer">
+	  <div onclick="checkLetter(document, 'a')" onmouseover="">a</div>
+	  <div onclick="checkLetter(document, 'b')" onmouseover="">b</div>
+	  <div onclick="checkLetter(document, 'c')" onmouseover="">c</div>
+	  <div onclick="checkLetter(document, 'd')" onmouseover="">d</div>
+	  <div onclick="checkLetter(document, 'e')" onmouseover="">e</div>
+	  <div onclick="checkLetter(document, 'f')" onmouseover="">f</div>
+	  <div onclick="checkLetter(document, 'g')" onmouseover="">g</div>
+	  <div onclick="checkLetter(document, 'h')" onmouseover="">h</div>
+	  <div onclick="checkLetter(document, 'i')" onmouseover="">i</div>
+	  <div onclick="checkLetter(document, 'j')" onmouseover="">j</div>
+	  <div onclick="checkLetter(document, 'k')" onmouseover="">k</div>
+	  <div onclick="checkLetter(document, 'l')" onmouseover="">l</div>
+	  <div onclick="checkLetter(document, 'm')" onmouseover="">m</div>
+	  <div onclick="checkLetter(document, 'n')" onmouseover="">n</div>
+	  <div onclick="checkLetter(document, 'o')" onmouseover="">o</div>
+	  <div onclick="checkLetter(document, 'p')" onmouseover="">p</div>
+	  <div onclick="checkLetter(document, 'q')" onmouseover="">q</div>
+	  <div onclick="checkLetter(document, 'r')" onmouseover="">r</div>
+	  <div onclick="checkLetter(document, 's')" onmouseover="">s</div>
+	  <div onclick="checkLetter(document, 't')" onmouseover="">t</div>
+	  <div onclick="checkLetter(document, 'u')" onmouseover="">u</div>
+	  <div onclick="checkLetter(document, 'v')" onmouseover="">v</div>
+	  <div onclick="checkLetter(document, 'w')" onmouseover="">w</div>
+	  <div onclick="checkLetter(document, 'x')" onmouseover="">x</div>
+	  <div onclick="checkLetter(document, 'y')" onmouseover="">y</div>
+	  <div onclick="checkLetter(document, 'z')" onmouseover="">z</div>
       </div>
       <div data-role="footer" id="footer">
 	<h5> Copyright © Pauline et Jacques.</h5>

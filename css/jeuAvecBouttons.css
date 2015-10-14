@@ -20,9 +20,9 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #fff;
-  min-width: 5vw;
-  min-height: 2vh;
-  cursor:pointer;
+  min-width: 8vw;
+  min-height: 3vh;
+  cursor: pointer;
   background: #666;
   color: #fff;
   text-shadow: 0 0 3px #000;
@@ -32,46 +32,44 @@
   margin: 5%;
 }
 
-
 @media all and (min-width:960px) {
-  #keyboardContainer div {
+  #keyboardContainer div, #result-majuscule {
     font-size: 35px;
   }
-  #lettreCurs {
-    width: 250px;
-    height: 250px;
+  #lettreCurs, #result-cursive {
+    width: 150px;
+    height: 150px;
   }
 }
  
 @media all and (max-width:959px) and (min-width:560px) {
-  #keyboardContainer div {
+  #keyboardContainer div, #result-majuscule {
     font-size: 28px;
   }
-  #lettreCurs {
-    width: 180px;
-    height: 180px;
-  }
-}
- 
-@media all and (max-width:559px) and (min-width:320px) {
-  #keyboardContainer div {
-    font-size: 22px;
-  }
-  #lettreCurs {
+  #lettreCurs, #result-cursive {
     width: 110px;
     height: 110px;
   }
 }
-@media all and (max-width:319px) {
-  #keyboardContainer div {
-    font-size: 15px;
+ 
+@media all and (max-width:559px) and (min-width:320px) {
+  #keyboardContainer div, #result-majuscule {
+    font-size: 22px;
   }
-  #lettreCurs {
-    width: 50px;
-    height: 50px;
+  #lettreCurs, #result-cursive {
+    width: 80px;
+    height: 80px;
   }
 }
-
-.result-majuscule{
-  font-size: 25px;
+@media all and (max-width:319px) {
+  #keyboardContainer div, #result-majuscule {
+    font-size: 15px;
+  }
+  #lettreCurs, #result-cursive {
+    width: 40px;
+    height: 40px;
+  }
+  td {
+    font-size: 15px;
+  }
 }

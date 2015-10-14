@@ -1,10 +1,6 @@
-body, html {
-  height:100%;
-}
-
-div.wrap {
-  height:100%; 
-  overflow:hidden;
+[data-role = page] {
+  height: 100% !important; 
+  position: relative !important;
 }
 
 #header {
@@ -15,6 +11,10 @@ div.wrap {
 #footer {
   background-color: #37DC89;
   color: white;
+  bottom: 0; 
+  position: absolute !important;
+  top: auto !important; 
+  width:100%;
 }
 
 #regle {

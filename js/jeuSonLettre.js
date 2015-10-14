@@ -29,7 +29,7 @@ function checkLetter(document, id) {
 function randomSon() {
   var lettres = "abcdefghijklmnopqrstuvwxyz";
   var rand_letter = lettres.charAt(Math.floor(Math.random() * lettres.length));
-  $("#audioPlayer").attr("src", "../sons/" + rand_letter + "Son.mp3");
+  $("#audioPlayer").attr("src", "../sons/sonsLettres/" + rand_letter + "Son.mp3");
   $("#audioPlayer").attr("val", rand_letter);
 };
 
