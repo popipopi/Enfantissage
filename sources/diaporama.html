@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>Enfantissage</title>
+    <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/diaporama.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+    $(document).bind('mobileinit',function(){
+      $.mobile.changePage.defaults.changeHash = false;
+      $.mobile.hashListeningEnabled = false;
+      $.mobile.pushStateEnabled = false;
+    }); 
+    </script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/aLettre.js"></script>
+  </head>
+
+  <body>
+    <div data-role="header" id="header">
+      <h1>Enfantissage</h1>
+      <a href="aLettre.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false" data-inline="true"></a>
+      <a href="../index.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true"></a>
+    </div>
+      
+    
+      <section id="slideshow">
+	<div class="container">
+	  <div class="c_slider"></div>
+	  <div class="slider">
+	    <figure>
+	    <img src="../images/diaporama/aDiapo.png" alt="" width="174" height="64" />
+	    </figure><!--
+	    --><figure>
+	    <img src="../images/diaporama/bDiapo.png" alt="" width="174" height="64" />
+	    </figure><!--
+	    --><figure>
+	    <img src="../images/diaporama/cDiapo.png" alt="" width="174" height="64" />  
+	    </figure><!--
+	    --><figure>
+	    <img src="../images/diaporama/dDiapo.png" alt="" width="174" height="64" />
+	    </figure>
+	   </div>
+	  </div>
+	  
+	  <span id="timeline"></span>
+	 </section>
+       
+    <div data-role="footer" id="footer">
+      <h5> Copyright © Pauline et Jacques.</h5>
+    </div>
+  </body>
+  
+</html>
