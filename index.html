@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
   <title>Enfantissage</title>
   <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/index.css"/>
@@ -20,19 +21,23 @@
       <div data-role="header" id="header">
 	<h1>Enfantissage</h1>
       </div>
-      <div class="ui-content">
-	<div id="image">
-	  <img src="images/jeuMenu/lettreMajtoMin.jpeg"/>
+      <div align="center" class="ui-content">
+        <div>
+          <h1 class="bienvenue">Bienvenue sur Enfantissage!!!</h1>
+          <h2 class="bienvenue">Viens jouer avec nous :)</h2>
+        </div>
+	<div>
+	  <img id="mainImage" src="images/jeuMenu/lettreMajtoMin.jpeg"/>
 	</div>
-	<div data-role="collapsible" data-collapsed-icon="" data-expanded-icon="">
-	  <h2><img class="homepageImage" src="images/homepage/apprendre.jpeg">Apprendre</h2>
+	<div class="menu" data-role="collapsible" data-collapsed-icon="" data-expanded-icon="">
+	  <h4 class="menuText"><img class="menuImage" src="images/homepage/apprendre.png">Apprendre</h4>
 	  <ul data-role="listview">
 	    <li><a href="sources/aLettreIndex.html" data-ajax="false">Lettres</a></li>
 	    <li><a href="sources/aMotsIndex.html" data-ajax="false">Mots</a></li>
 	  </ul>
         </div>
-        <div data-role="collapsible" data-collapsed-icon="" data-expanded-icon="">
-	  <h2><img class="homepageImage" src="images/homepage/jouer.png">Jouer</h2>
+        <div class="menu" data-role="collapsible" data-collapsed-icon="" data-expanded-icon="">
+	  <h4 class="menuText"><img class="menuImage" src="images/homepage/jouer.png">Jouer</h4>
 	  <ul data-role="listview">
 	    <li><a href="sources/jeuxLettreIndex.html" data-ajax="false">Lettres</a></li>
 	    <li><a href="#" data-ajax="false">Mots</a></li>

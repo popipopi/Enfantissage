@@ -1,0 +1,127 @@
+/* Slots for final card positions */
+
+#cardSlots {
+  margin: 1% auto 0 auto;
+  background: white;
+}
+
+/* The initial pile of unsorted cards */
+
+#cardPile {
+  margin: 0 auto;
+  background: #ffd;
+}
+
+#cardSlots, #cardPile {
+  width: 80vw;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  display: inline-block;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+/* Individual cards and slots */
+
+#cardSlots div, #cardPile div {
+  float: left;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+  min-width: 5vw;
+  min-height: 3vh;
+}
+
+#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}
+
+#cardSlots div.hovered {
+  background: #aaa;
+}
+
+#cardSlots div {
+  border-style: dashed;
+}
+
+#cardPile div {
+  background: #666;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+#cardPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+#arrowImage {
+  cursor:pointer;
+}
+
+@media all and (min-width:960px) {
+    #cardSlots div, #cardPile div {
+      font-size: 35px;
+    }
+    #randomImage {
+      width: 250px;
+      height: 250px;
+    }
+    #arrowImage {
+      width: 150px;
+      height: 150px;
+    }
+}
+ 
+@media all and (max-width:959px) and (min-width:560px) {
+    #cardSlots div, #cardPile div {
+      font-size: 28px;
+    }
+    #randomImage {
+      width: 180px;
+      height: 180px;
+    }
+    #arrowImage {
+      width: 100px;
+      height: 100px;
+    }
+}
+ 
+@media all and (max-width:559px) and (min-width:320px) {
+    #cardSlots div, #cardPile div {
+      font-size: 22px;
+    }
+    #randomImage {
+      width: 110px;
+      height: 110px;
+    }
+    #arrowImage {
+      width: 50px;
+      height: 50px;
+    }
+}
+@media all and (max-width:319px) {
+    #cardSlots div, #cardPile div {
+      font-size: 12px;
+    }
+    #randomImage {
+      width: 50px;
+      height: 50px;
+    }
+    #arrowImage {
+      width: 25px;
+      height: 25px;
+    }
+}
+
+

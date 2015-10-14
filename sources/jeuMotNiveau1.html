@@ -5,7 +5,7 @@
     <title>Enfantissage</title>
     <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/index.css"/>
-    <link rel="stylesheet" href="../css/jeuAlphabet.css"/>
+    <link rel="stylesheet" href="../css/jeuMot.css"/>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
     <script>
@@ -16,10 +16,10 @@
       }); 
     </script>
     <script src="../js/jquery.mobile-1.4.5.min.js"></script>
-    <script src="../js/jeuAlphabet.js"></script>
+    <script src="../js/jeuMotNiveau.js"></script>
   </head>
   <body>
-    <div data-role="page" id="jeuAlphabet">
+    <div data-role="page" id="jeuMotNiveau1">
 
       <div data-role="header" id="header">
 	<h1>Enfantissage</h1>
@@ -27,8 +27,14 @@
       </div>
     
       <div id="content" class="ui-content" align="center">
+        <div align="center">
+	  <img id="randomImage" src=""/>
+        </div>
 	<div id="cardPile"> </div>
 	<div id="cardSlots"> </div>
+      </div>
+      <div align="center">
+	<img id="arrowImage" src="../images/rightArrow.png" onclick="nextWord()" onmouseover=""/>
       </div>
       <div data-role="footer" id="footer">
         <h5> Copyright © Pauline et Jacques.</h5>

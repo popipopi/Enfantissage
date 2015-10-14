@@ -1,5 +1,13 @@
+body, html {
+  height:100%;
+}
+
+div.wrap {
+  height:100%; 
+  overflow:hidden;
+}
+
 #header {
-  font-size: 150%;
   background-color: #444444;
   color: white;
 }
@@ -9,17 +17,67 @@
   color: white;
 }
 
-[data-role=page] {
-  height: 100% !important; position:relative !important;
-}
-
 #regle {
   margin:1.5%;
   font-family: Comic Sans MS;
   font-size:110%;
 }
 
-.homepageImage {
-  width: 15%;
-  height: 15%;
+.menuImage {
+  width: 14vw;
+  height: 10vh;
+  margin-right: 35vw;
+}
+
+.menu {
+  width: 80vw;
+}
+
+#mainImage {
+  width: 35vw;
+  height: 15vh;
+}
+
+@media all and (min-width:960px) {
+    #header {
+        font-size: 30px;
+    }
+    .menuText {
+        font-size: 100px;
+    }
+}
+ 
+@media all and (max-width:959px) and (min-width:560px) {
+    #header {
+        font-size: 23px;
+    }
+    #footer {
+	font-size: 12px;
+    }
+    .bienvenue {
+	font-size: 20px;
+    }
+}
+ 
+@media all and (max-width:559px) and (min-width:320px) {
+    #header{
+        font-size: 17px;
+    }
+    #footer {
+	font-size: 11px;
+    }
+    .bienvenue {
+	font-size: 17px;
+    }
+}
+@media all and (max-width:319px) {
+    #header {
+        font-size: 11px;
+    }
+    #footer {
+	font-size: 10px;
+    }
+    .bienvenue {
+	font-size: 12px;
+    }
 }
