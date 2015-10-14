@@ -22,13 +22,14 @@
   <body>
     <div data-role="header" id="header">
       <h1>Enfantissage</h1>
-      <a href="aLettreIndex.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all"></a>
+      <a href="aLettreIndex.html" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-ajax="false" data-inline="true"></a>
+      <a href="../index.html" data-ajax="false" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true"></a>
     </div>
       
     <div class="ui-content">
       <table align="center">
 	<tr align="center" id="result-majuscule"></tr>
-	<tr><td><img  id="result-cursive" src="#" style="visibilty:hidden"/></td></tr>
+	<tr><td><img  id="result-cursive" src="#" style="display:none"/></td></tr>
         <tr><td><audio id="audioPlayer" src="" autoplay controls="controls" style="display:none"></audio></td></tr>
       </table>
 
@@ -63,6 +64,8 @@
 	</div>
       </div>
     </div>
+    
+    <button class="ui-btn ui-shadow" onclick="self.location.href='diaporama.html'" id="button_diapo">Voir le diaporama de toutes les lettres</button>
 
     <div data-role="footer" id="footer">
       <h5> Copyright © Pauline et Jacques.</h5>

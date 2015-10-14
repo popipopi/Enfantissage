@@ -1,4 +1,3 @@
-
 #lettreMaj {
   font-size: 300%;
   text-align: center;
@@ -18,4 +17,6 @@
   margin: 5%;
 }
 
-
+.result-majuscule{
+  font-size: 25px;
+}
