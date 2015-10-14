@@ -4,11 +4,13 @@
 }
 
 .button {
-  width: 7%;
-  height: 5%;
+  width: 11vw;
+  height: 10vh;
   float: left;
-  margin: 5px 10px;
-  min-width: 50px;
+  margin-left: 0.1vw;
+  margin-right: 0.1vw;
+  min-width: 10px;
+  overflow: hidden;
 }
 
 #audioPlayer {

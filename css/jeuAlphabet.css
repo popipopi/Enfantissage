@@ -30,8 +30,8 @@
 
 #cardSlots div, #cardPile div {
   float: left;
-  width: 3%;
-  height: 1%;
+  width: 2%;
+  height: 0.5%;
   padding: 1%;
   border: 2px solid #333;
   -moz-border-radius: 10px;
@@ -39,11 +39,11 @@
   border-radius: 10px;
   margin: 1%;
   background: #fff;
-  min-width: 50px;
+  min-width: 30px;
 }
 
 #cardSlots div {
-  line-height: 400%;
+  font-size: 35px;
 }
 
 #cardSlots div:first-child, #cardPile div:first-child {
@@ -61,7 +61,7 @@
 #cardPile div {
   background: #666;
   color: #fff;
-  font-size: 50px;
+  font-size: 35px;
   text-shadow: 0 0 3px #000;
 }
 
