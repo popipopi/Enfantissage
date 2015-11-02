@@ -19,33 +19,28 @@
   <body>
     <div data-role="page">
       <div data-role="header" id="header">
-	<h1>Enfantissage</h1>
+	     <h1>Enfantissage</h1>
       </div>
       <div align="center" class="ui-content">
         <div>
           <h1 class="bienvenue">Bienvenue sur Enfantissage!!!</h1>
-          <h2 class="bienvenue">Viens jouer avec nous :)</h2>
         </div>
-	<div>
-	  <img id="mainImage" src="images/jeuMenu/lettreMajtoMin.jpeg"/>
-	</div>
-	<div class="menu" data-role="collapsible" data-collapsed-icon="" data-expanded-icon="">
-	  <h4 class="menuText"><img class="menuImage" src="images/homepage/apprendre.png">Apprendre</h4>
-	  <ul data-role="listview">
-	    <li><a href="sources/aLettreIndex.html" data-ajax="false">Lettres</a></li>
-	    <li><a href="sources/aMotsIndex.html" data-ajax="false">Mots</a></li>
-	  </ul>
+      	<div>
+      	  <img id="mainImage" src="images/homepage/homeImage.jpeg"/>
+      	</div>
+        <div id="apprentissage">
+          <h1 align="center">Apprentissage</h1>
+           <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/aLettreIndex.html'"/>
+           <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/aMotsIndex.html'"/>
         </div>
-        <div class="menu" data-role="collapsible" data-collapsed-icon="" data-expanded-icon="">
-	  <h4 class="menuText"><img class="menuImage" src="images/homepage/jouer.png">Jouer</h4>
-	  <ul data-role="listview">
-	    <li><a href="sources/jeuxLettreIndex.html" data-ajax="false">Lettres</a></li>
-	    <li><a href="#" data-ajax="false">Mots</a></li>
-	  </ul>
+        <div id="jeux">
+          <h1 align="center">Jeux</h1>
+           <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/jeuxLettreIndex.html'"/>
+           <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/jeuxMotIndex.html'"/>
         </div>
       </div>
       <div data-role="footer" id="footer">
-	<h5> Copyright © Pauline et Jacques.</h5>
+  	   <h5> Copyright © Pauline et Jacques.</h5>
       </div>
     </div>
   </body>

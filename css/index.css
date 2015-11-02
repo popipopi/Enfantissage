@@ -1,20 +1,17 @@
-[data-role = page] {
-  height: 100% !important; 
-  position: relative !important;
+#header {
+  background-color: #003366;
+  color: white;
+  height: 10vh;
 }
 
-#header {
-  background-color: #444444;
-  color: white;
+.ui-content {
+  background-image:linear-gradient(#0131B4, #318CE7);
 }
 
 #footer {
-  background-color: #37DC89;
+  background-color: #048B9A;
   color: white;
-  bottom: 0; 
-  position: absolute !important;
-  top: auto !important; 
-  width:100%;
+  height: 5vh;
 }
 
 #regle {
@@ -23,19 +20,38 @@
   margin: 3vw;
 }
 
-.menuImage {
-  width: 14vw;
-  height: 10vh;
-  margin-right: 35vw;
-}
-
-.menu {
-  width: 80vw;
-}
-
 #mainImage {
   width: 35vw;
-  height: 15vh;
+  height: 20vh;
+}
+
+#homeMenu {
+  margin:0;
+}
+
+#apprentissage {
+  width: 49%;
+  float: left;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#jeux {
+  margin-left: 51%;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#apprentissage img, #jeux img{
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 5vw;
+  width: 14vw;
+  height: 14vh;
 }
 
 @media all and (min-width:960px) {
@@ -50,6 +66,9 @@
     }
     #score {
       font-size: 50px;
+    }
+    #jeux, #apprentissage {
+      font-size: 20px;
     }
 }
  
@@ -66,10 +85,12 @@
     #score {
       font-size: 35px;
     }
-
+    #jeux, #apprentissage {
+      font-size: 15px;
+    }
 }
  
-@media all and (max-width:559px) and (min-width:320px) {
+@media all and (max-width:559px) and (min-width:300px) {
     #header{
         font-size: 17px;
     }
@@ -85,18 +106,24 @@
     #regle {
       font-size: 12px;
     }
+    #jeux, #apprentissage {
+      font-size: 9px;
+    }
 }
 @media all and (max-width:319px) {
     #header {
-        font-size: 11px;
+      font-size: 11px;
     }
     #footer {
-	font-size: 10px;
+	    font-size: 7px;
     }
     .bienvenue, #regle {
-	font-size: 12px;
+	     font-size: 12px;
     }
     #score {
       font-size:20px;
+    }
+    #jeux, #apprentissage {
+      font-size: 5px;
     }
 }

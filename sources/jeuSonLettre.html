@@ -34,7 +34,10 @@
           </tr>
         </table>
 	<div>
-	  <img src="../images/playAudio.jpeg" onclick="this.firstChild.play()" onmouseover=""/><audio id="audioPlayer" src="" autoplay></audio>
+	  <a onclick="this.firstChild.play()">
+	  	<audio id="audioPlayer" src="" autoplay></audio>
+	  	<img src="../images/playAudio.jpeg"/>
+	  </a>
 	</div>
 	<div id="keyboardContainer">
 	  <div onclick="checkLetter(document, 'a')" onmouseover="">a</div>
@@ -63,9 +66,6 @@
 	  <div onclick="checkLetter(document, 'x')" onmouseover="">x</div>
 	  <div onclick="checkLetter(document, 'y')" onmouseover="">y</div>
 	  <div onclick="checkLetter(document, 'z')" onmouseover="">z</div>
-      </div>
-      <div data-role="footer" id="footer">
-	<h5> Copyright © Pauline et Jacques.</h5>
       </div>
     </div>
   </body>

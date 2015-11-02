@@ -11,7 +11,7 @@ $(document).on('pagecreate','#resultat', function() {
 });
 
 function init() {
-  var images = ["banane", "bleu", "cerises", "chat", "chien", "fraise", "oiseaux", "jaune", "lapin", "marron", "poire", "pomme", "poule", "raisin", "rose", "rouge", "tortue", "vert"];  
+  var images = ["banane", "bleu", "cerises", "chat", "chien", "fraise", "jaune", "lapin", "marron", "poire", "pomme", "poule", "raisin", "rose", "rouge", "tortue", "vert"];  
   for (var i = 0; i < 3; ++i) {
     var randomNumber = Math.floor(Math.random() * images.length);
     selection.push(images[randomNumber]);
