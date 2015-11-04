@@ -5,7 +5,7 @@
 }
 
 .ui-content {
-  background-image:linear-gradient(#0131B4, #318CE7);
+  background-image:gray;
 }
 
 #footer {
@@ -18,40 +18,6 @@
   font-family: Comic Sans MS;
   width: 80vw;
   margin: 3vw;
-}
-
-#mainImage {
-  width: 35vw;
-  height: 20vh;
-}
-
-#homeMenu {
-  margin:0;
-}
-
-#apprentissage {
-  width: 49%;
-  float: left;
-  border: 2px solid #333;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-#jeux {
-  margin-left: 51%;
-  border: 2px solid #333;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-#apprentissage img, #jeux img{
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 5vw;
-  width: 14vw;
-  height: 14vh;
 }
 
 @media all and (min-width:960px) {
@@ -67,8 +33,11 @@
     #score {
       font-size: 50px;
     }
-    #jeux, #apprentissage {
-      font-size: 20px;
+    .ui-mobile fieldset {
+      font-size: 27px;
+    }
+    figcaption {
+      font-size: 18px;
     }
 }
  
@@ -85,8 +54,11 @@
     #score {
       font-size: 35px;
     }
-    #jeux, #apprentissage {
-      font-size: 15px;
+    .ui-mobile fieldset {
+      font-size: 20px;
+    }
+    figcaption {
+      font-size: 13px;
     }
 }
  
@@ -106,7 +78,10 @@
     #regle {
       font-size: 12px;
     }
-    #jeux, #apprentissage {
+    .ui-mobile fieldset {
+      font-size: 15px;
+    }
+    figcaption {
       font-size: 9px;
     }
 }
@@ -123,7 +98,10 @@
     #score {
       font-size:20px;
     }
-    #jeux, #apprentissage {
+    .ui-mobile fieldset {
+      font-size: 8px;
+    }
+    figcaption {
       font-size: 5px;
     }
 }

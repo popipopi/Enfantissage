@@ -20,6 +20,13 @@ function checkLetter(document, id) {
   }
     
   if (total >= 10) {
+    var users = JSON.parse(localStorage.getItem("users"));
+    var user = users[localStorage.getItem("selected")];
+    if (score > user[3]) {
+      user[3] = score * 10;
+      users[localStorage.getItem("selected")] = user;
+      localStorage.setItem("users", JSON.stringify(users));
+    }
     $.mobile.changePage( "resultat.html", { transition: "slideup", changeHash: false });
   }
   

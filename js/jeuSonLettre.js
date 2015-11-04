@@ -20,6 +20,13 @@ function checkLetter(document, id) {
   }
   
   if (total >= 10) {
+    var users = JSON.parse(localStorage.getItem("users"));
+    var user = users[localStorage.getItem("selected")];
+    if (score > user[2]) {
+      user[2] = score * 10;
+      users[localStorage.getItem("selected")] = user;
+      localStorage.setItem("users", JSON.stringify(users));
+    }
     $.mobile.changePage( "resultat.html", { transition: "slideup", changeHash: false });
   }
   
@@ -49,3 +56,9 @@ function generateResults(document, result) {
   td.appendChild(font);
 };
 
+function jouerSon() {
+  var audio = $(this).find('audio').get();
+  console.log(audio);
+  console.log($('#audioPlayer'));
+  $('#audioPlayer').play();
+}

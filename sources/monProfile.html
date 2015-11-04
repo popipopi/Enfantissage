@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8"/>
+  <title>Enfantissage</title>
+  <link href="../css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+  <link rel="stylesheet" href="../css/monProfile.css"/>
+  <script src="../js/jquery.min.js"></script>
+  <script>
+    $(document).bind('mobileinit',function(){
+      $.mobile.changePage.defaults.changeHash = false;
+      $.mobile.hashListeningEnabled = false;
+      $.mobile.pushStateEnabled = false;
+    }); 
+  </script>
+  <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../js/monProfile.js"></script>
+  </head>
+  
+  <body>
+    <div align="center" data-role="page" id="demo-page" class="my-page">
+      <div data-role="header" id="header">
+	       <h1>Enfantissage</h1>
+	       <a href="../index.html" data-ajax="false" class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"></a>
+      </div>
+      <div role="main" class="ui-content" align="center">
+      	<div id="menuProfile">
+          <a id="progression" href="#" data-role="button" data-theme="c" onclick="self.location.href='maProgression.html'">Ma progression</a>
+          <a id="changerProfile" href="#" data-role="button" data-theme="c" onclick="onChangerProfile()">Changer profile</a>
+			    <a id="nouveauProfile" href="#" data-role="button" data-theme="c" onclick="onNouveauProfile()">Nouveau profile</a>
+          <a id="deconnection" href="#" data-role="button" data-theme="c" onclick="onDeconnection()">Deconnection</a>
+		    </div>
+    		<div id="creationProfile">
+    			<div data-role="fieldcontain">
+    				<label for="name">Prénom: </label>
+    				<input type="text" name="name" id="name" value=""/>
+            <div class="image">
+                <img src="../images/homepage/defaultProfile.jpg" onclick=""/>
+              <h2><span>Prends une photo</span></h2>
+            </div>
+    			</div>
+    			<a href="#" data-role="button" data-theme="c" onclick="onCreerProfile()">Créer nouveau profile</a>
+    		</div>
+        <div id="choixProfile">
+          <h2>Choisis un profil</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

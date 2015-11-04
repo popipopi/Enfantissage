@@ -28,8 +28,10 @@
   text-shadow: 0 0 3px #000;
 }
 
-#audioPlayer {
-  margin: 5%;
+div img {
+  cursor: pointer;
+  width: 15vw;
+  height: 15vh;
 }
 
 @media all and (min-width:960px) {

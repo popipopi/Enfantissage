@@ -14,29 +14,38 @@
       $.mobile.pushStateEnabled = false;
     }); 
   </script>
+  <script src="js/index.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
     <div data-role="page">
       <div data-role="header" id="header">
 	     <h1>Enfantissage</h1>
+       <p id="messageBonjour"></p>
+       <img src="images/homepage/defaultProfile.jpg" onclick="document.location.href='sources/monProfile.html'"/>
       </div>
       <div align="center" class="ui-content">
         <div>
-          <h1 class="bienvenue">Bienvenue sur Enfantissage!!!</h1>
+          <h2>Apprentissage</h2>
+           <div>
+             <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/aLettreIndex.html'"/>
+             <p>Joue avec les lettres</p>
+           </div>
+           <div>
+             <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/aMotsIndex.html'"/>
+             <p>Joue avec les lettres</p>
+           </div>
         </div>
-      	<div>
-      	  <img id="mainImage" src="images/homepage/homeImage.jpeg"/>
-      	</div>
-        <div id="apprentissage">
-          <h1 align="center">Apprentissage</h1>
-           <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/aLettreIndex.html'"/>
-           <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/aMotsIndex.html'"/>
-        </div>
-        <div id="jeux">
-          <h1 align="center">Jeux</h1>
-           <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/jeuxLettreIndex.html'"/>
-           <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/jeuxMotIndex.html'"/>
+        <div>
+          <h2>Jeux</h2>
+           <div>
+             <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/jeuxLettreIndex.html'"/>
+             <p>Joue avec les lettres</p>
+           </div>
+           <div>
+             <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/jeuxMotIndex.html'"/>
+             <p>Joue avec les mots</p>
+           </div>
         </div>
       </div>
       <div data-role="footer" id="footer">
