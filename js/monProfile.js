@@ -1,17 +1,17 @@
 $(document).ready(function() {
 	var users = JSON.parse(localStorage.getItem("users"));
 	if (users.length == 0) {
-		// Si aucun profile n'est créé pour le moment
+		// If there is no profil:
 		$('#progression').css('display', 'none');
 		$('#deconnection').css('display', 'none');
 		$('#changerProfile').css('display', 'none');
 	} else if (localStorage.getItem("selected") == -1) {
-		// Si aucun profile n'est sélectionner.
+		// If no profil is selected:
 		$('#progression').css('display', 'none');
 		$('#deconnection').css('display', 'none');
 		$('#changerProfile').text("Choisir profile");
 	} else {
-		// Si un profil est déjà sélectionné.
+		// If a profil is selected:
 		$('#nouveauProfile').css('display', 'none');
 		$('#changerProfile').text("Changer profile");
 	}
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	prepareChoixProfile(users);
 });
 
-// On prépare la div qui va contenir l'ensemble des profils.
+// We prepare the div that will contain the existing profils.
 function prepareChoixProfile(users) {
 	for (var i = 0; i < users.length; ++i) {
 		var div = $('<div>');
@@ -36,25 +36,26 @@ function prepareChoixProfile(users) {
 	}
 }
 
-// Sélectionne le profil sur lequel l'utilisateur à quitter
-// et fais une redirection sur la page d'accueil.
+// Selection the profil on which the user has clicked and then
+// redirect him to the index.
 function onChoixProfile(id) {
 	localStorage.setItem("selected", id);
 	location = "../index.html";
 }
 
-// Affiche la div contenant le formulaire de création et
-// cache la div contenant le menu du profil.
+// Display the div containing the creation form and hide 
+// other div.
 function onNouveauProfile() {
 	$('#menuProfile').css('display', 'none');
 	$('#creationProfile').css('display', 'block');
 }
 
-// 
+// Create a new profil and redirect to the index.
 function onCreerProfile() {
 	var users = JSON.parse(localStorage.getItem("users"));
-	// Le nouvel utilisateur possède en clé son nom et les 
-	// trois paramètres suivants sont ses meilleurs résultats.
+	// The new user has 5 parameters.
+	// The first one is its name, the second one the path of its picture,
+	// and the last three are the best results in three games.
 	var new_user = [$('#name').val(), "images/photos/defaultProfile.jpg", "00", "00", "00"	];
 	users.push(new_user);
 	localStorage.setItem("users", JSON.stringify(users));
@@ -62,17 +63,21 @@ function onCreerProfile() {
 	location = "../index.html";
 }
 
+// We deselect the current user. Then, we reload the page.
 function onDeconnection() {
-	// On déselectionne l'utilisateur sélectionné.
 	localStorage.setItem("selected", - 1);
 	location.reload();
 }
 
+// When the player click on change profil, 
+// we display the concern div and hide the others.
 function onChangerProfile() {
 	$('#menuProfile').css('display', 'none');
 	$('#choixProfile').css('display', 'block');
 }
 
+// Due to a lack of time, this functionnality is not
+// operationnal.
 function onPrendrePhoto() {
 	navigator.camera.getPicture(function(imageURI) {
 

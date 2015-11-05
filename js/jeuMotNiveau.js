@@ -1,15 +1,23 @@
 var correctCards = 0;
+// The number of correct div.
 var selection = [];
+// The word selection that will be displayed during
+// the game.
 var count = -1;
+// Number of word shown so far.
 
+// When the document is ready, we can initialize it.
 $(document).ready(function(){
   init();
 });
 
+// When we create the result page, we define in it
+// a text that will be displayed.
 $(document).on('pagecreate','#resultat', function() {
   $("#score").text("Bravo !!!");
 });
 
+// Initialize the document.
 function init() {
   var images = ["banane", "bleu", "cerises", "chat", "chien", "fraise", "jaune", "lapin", "marron", "poire", "pomme", "poule", "raisin", "rose", "rouge", "tortue", "vert"];  
   for (var i = 0; i < 3; ++i) {
@@ -21,12 +29,14 @@ function init() {
   nextWord();
 }
 
+// This method is called every time a new word need to be displayed.
 function nextWord() {
   // Reset the game
   correctCards = 0;
   $('#cardPile').html('');
   $('#cardSlots').html('');
   
+  // We increase the count every time a new word is displayed.
   count ++;
   $('#arrowImage').hide();
   var sorted_word = sort(selection[count]);
@@ -95,7 +105,7 @@ function handleCardDrop(event, ui) {
   // If the card was dropped to the correct slot,
   // change the card colour, position it directly
   // on top of the slot, and prevent it being dragged
-  // again
+  // again.
 
   if (slotNumber == cardNumber) {
     ui.draggable.addClass('correct');
@@ -106,8 +116,10 @@ function handleCardDrop(event, ui) {
     correctCards++;
   } 
   
-  // If all the cards have been placed correctly then display a message
-  // and reset the cards for another go
+  // If all the cards have been placed correctly and 3 words
+  // have benn displayed, then we redirect the player to the result page.
+  // If only all the cards have been placed correctly, then we display
+  // an arrow to allow the user to show a new word.
 
   if (correctCards == selection[count].length) {
     if (count < selection.length - 1) {

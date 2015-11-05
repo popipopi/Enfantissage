@@ -1,16 +1,24 @@
 var correctCards = 0;
+// The number of correct div.
 var lettres = "abcdefghijklmnopqrstuvwxyz";
+// The whole alphabet.
   
+// When the document is ready, we can initialize it.
 $(document).ready(function(){
   init();
 });
 
+// When we create the result page, we define in it
+// a text that will be displayed.
 $(document).on('pagecreate','#resultat', function() {
   $("#score").text("Bravo !!!");
 });
 
+// Initialize the document.
 function init() {
   lettres = "abcdefghijklmnopqrstuvwxyz";
+
+  // Select 7 following letters in the alphabet.
   lettres = selectLettres(lettres);
 
   // Reset the game
@@ -84,8 +92,8 @@ function handleCardDrop(event, ui) {
     correctCards++;
   } 
   
-  // If all the cards have been placed correctly then display a message
-  // and reset the cards for another go
+  // If all the cards have been placed correctly then we redirect
+  // the user to the result page.
 
   if (correctCards == lettres.length) {
     $.mobile.changePage( "resultat.html", { transition: "slideup", changeHash: false });

@@ -48,6 +48,10 @@ var app = {
     }
 };
 
+// When the document is ready, if the locale storage has never been use,
+// we create a 2D table of users and an int to select the users.
+// Otherwise, we display information about the current user, if there
+// is one.
 $(document).ready(function() {
     if (localStorage.getItem("selected") != null) {
         if (localStorage.getItem("selected") != -1) {
