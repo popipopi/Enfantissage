@@ -6,6 +6,31 @@
   <title>Enfantissage</title>
   <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header" id="header">
+	     <h1>Enfantissage</h1>
+       <h2 id="messageBonjour" class="ui-btn-left"></h2>
+       <img src="images/photos/defaultProfile.jpg" class="ui-btn-right" onclick="document.location.href='sources/monProfile.html'" onmouseover=""/>
+      </div>
+      <div align="center" class="ui-content">
+        <div>
+          <h2>Apprentissage</h2>
+          <button onclick="document.location.href='sources/aLettreIndex.html'">Apprends les lettres</button>
+          <button onclick="document.location.href='sources/aMotsIndex.html'">Apprends les mots</button>
+        </div>
+        <div>
+          <h2>Jeux</h2>
+          <button onclick="document.location.href='sources/jeuxLettreIndex.html'">Joues avec les lettres</button>
+          <button onclick="document.location.href='sources/jeuxMotIndex.html'">Joues avec les mots</button>
+        </div>
+      </div>
+      <div data-role="footer" id="footer">
+  	   <h5> Copyright © Pauline et Jacques.</h5>
+      </div>
+    </div>
+    
   <script src="js/jquery.min.js"></script>
   <script>
     $(document).bind('mobileinit',function(){
@@ -16,41 +41,5 @@
   </script>
   <script src="js/index.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
-  </head>
-  <body>
-    <div data-role="page">
-      <div data-role="header" id="header">
-	     <h1>Enfantissage</h1>
-       <p id="messageBonjour"></p>
-       <img src="images/homepage/defaultProfile.jpg" onclick="document.location.href='sources/monProfile.html'"/>
-      </div>
-      <div align="center" class="ui-content">
-        <div>
-          <h2>Apprentissage</h2>
-           <div>
-             <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/aLettreIndex.html'"/>
-             <p>Joue avec les lettres</p>
-           </div>
-           <div>
-             <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/aMotsIndex.html'"/>
-             <p>Joue avec les lettres</p>
-           </div>
-        </div>
-        <div>
-          <h2>Jeux</h2>
-           <div>
-             <img src="images/homepage/lettres.jpeg" onclick="document.location.href='sources/jeuxLettreIndex.html'"/>
-             <p>Joue avec les lettres</p>
-           </div>
-           <div>
-             <img src="images/homepage/mots.jpeg" onclick="document.location.href='sources/jeuxMotIndex.html'"/>
-             <p>Joue avec les mots</p>
-           </div>
-        </div>
-      </div>
-      <div data-role="footer" id="footer">
-  	   <h5> Copyright © Pauline et Jacques.</h5>
-      </div>
-    </div>
   </body>
 </html>

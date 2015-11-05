@@ -22,12 +22,17 @@ $(document).ready(function() {
 // On prépare la div qui va contenir l'ensemble des profils.
 function prepareChoixProfile(users) {
 	for (var i = 0; i < users.length; ++i) {
-		var img = $('<img>');
-		img.attr('id', i);
-		img.attr('class', 'imagesSelection');
-		img.attr('onclick', "onChoixProfile(this.id)");
-		img.attr('src', "../" + users[i][1]);
-		img.appendTo('#choixProfile');
+		var div = $('<div>');
+		div.attr('class', 'image');
+		div.attr('id', i);
+		div.attr('style', 'background-image: url(../' + users[i][1] + ')');
+		div.attr('onclick', "onChoixProfile(this.id)");
+		div.appendTo('#choixProfile');
+		var h2 = $('<h2>');
+		h2.appendTo(div);
+		var span = $('<span>');
+		span.text(users[i][0]);
+		span.appendTo(h2);
 	}
 }
 
@@ -50,7 +55,7 @@ function onCreerProfile() {
 	var users = JSON.parse(localStorage.getItem("users"));
 	// Le nouvel utilisateur possède en clé son nom et les 
 	// trois paramètres suivants sont ses meilleurs résultats.
-	var new_user = [$('#name').val(), "images/homepage/defaultProfile.jpg", "00", "00", "00"	];
+	var new_user = [$('#name').val(), "images/photos/defaultProfile.jpg", "00", "00", "00"	];
 	users.push(new_user);
 	localStorage.setItem("users", JSON.stringify(users));
 	localStorage.setItem("selected", users.length - 1);
@@ -66,4 +71,17 @@ function onDeconnection() {
 function onChangerProfile() {
 	$('#menuProfile').css('display', 'none');
 	$('#choixProfile').css('display', 'block');
+}
+
+function onPrendrePhoto() {
+	navigator.camera.getPicture(function(imageURI) {
+
+	    // imageURI is the URL of the image that we can use for
+	    // an <img> element or backgroundImage.
+
+	  }, function(err) {
+
+	    // Ruh-roh, something bad happened
+
+	  }, cameraOptions);
 }

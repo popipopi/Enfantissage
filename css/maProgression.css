@@ -1,0 +1,12 @@
+div h2 {
+	display: inline-block;
+}
+
+@media all and (max-width:319px) {
+	div h2 {
+		font-size: 19px;
+	}
+	.ui-content h1 {
+		font-size: 22px;
+	}
+}

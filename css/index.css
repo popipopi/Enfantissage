@@ -1,7 +1,14 @@
 #header {
   background-color: #003366;
   color: white;
-  height: 10vh;
+}
+
+#header img {
+  cursor: pointer;
+}
+
+#heder .ui-btn-right {
+  cursor: pointer;
 }
 
 .ui-content {
@@ -11,66 +18,70 @@
 #footer {
   background-color: #048B9A;
   color: white;
-  height: 5vh;
 }
 
 #regle {
   font-family: Comic Sans MS;
-  width: 80vw;
   margin: 3vw;
 }
 
 @media all and (min-width:960px) {
-    #header {
+    #header h1 {
         font-size: 30px;
     }
-    .menuText {
-        font-size: 100px;
+    #header h2 {
+      font-size: 27px;
     }
-    .bienvenue, #regle {
+    #header img {
+      width: 75px;
+      height: 75px;
+    }
+    #footer {
+      font-size: 20px;
+    }
+    #regle {
       font-size: 27px;
     }
     #score {
       font-size: 50px;
     }
-    .ui-mobile fieldset {
-      font-size: 27px;
-    }
-    figcaption {
-      font-size: 18px;
-    }
 }
  
 @media all and (max-width:959px) and (min-width:560px) {
-    #header {
+    #header h1 {
       font-size: 23px;
     }
-    #footer {
-      font-size: 12px;
+    #header h2 {
+      font-size: 21px;
     }
-    .bienvenue, #regle {
+    #header img {
+      width: 55px;
+      height: 55px;
+    }
+    #footer {
+      font-size: 17px;
+    }
+    #regle {
       font-size: 20px;
     }
     #score {
       font-size: 35px;
     }
-    .ui-mobile fieldset {
-      font-size: 20px;
-    }
-    figcaption {
-      font-size: 13px;
-    }
 }
  
 @media all and (max-width:559px) and (min-width:300px) {
-    #header{
+    #header h1 {
         font-size: 17px;
     }
-    #footer {
-	font-size: 11px;
+    #header h2 {
+      font-size: 11px;
     }
-    .bienvenue {
-	font-size: 17px;
+    #header img {
+      width: 40px;
+      height: 40px;
+    }
+    #footer {
+	font-size: 14px;
     }
     #score {
       font-size: 25px;
@@ -78,30 +89,25 @@
     #regle {
       font-size: 12px;
     }
-    .ui-mobile fieldset {
-      font-size: 15px;
-    }
-    figcaption {
-      font-size: 9px;
-    }
 }
 @media all and (max-width:319px) {
-    #header {
-      font-size: 11px;
+    #header h1 {
+      font-size: 12px;
+    }
+    #header h2 {
+      font-size: 9px;
+    }
+    #header img {
+      width: 25px;
+      height: 25px;
     }
     #footer {
-	    font-size: 7px;
+	    font-size: 10px;
     }
-    .bienvenue, #regle {
+    #regle {
 	     font-size: 12px;
     }
     #score {
       font-size:20px;
-    }
-    .ui-mobile fieldset {
-      font-size: 8px;
-    }
-    figcaption {
-      font-size: 5px;
     }
 }
