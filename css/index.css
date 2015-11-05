@@ -1,5 +1,17 @@
+html, body { 
+  height: 100% }
+  
+h2{
+  color: #faa248;
+}
+  
+#page {
+  min-height: 100%;
+  position: relative;
+}
+
 #header {
-  background-color: #003366;
+  background-color: #b9dddc;
   color: white;
 }
 
@@ -7,7 +19,7 @@
   cursor: pointer;
 }
 
-#heder .ui-btn-right {
+#header .ui-btn-right {
   cursor: pointer;
 }
 
@@ -18,12 +30,18 @@
 #footer {
   background-color: #048B9A;
   color: white;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #regle {
   font-family: Comic Sans MS;
   margin: 3vw;
 }
+
 
 @media all and (min-width:960px) {
     #header h1 {
@@ -40,7 +58,7 @@
       font-size: 20px;
     }
     #regle {
-      font-size: 27px;
+      font-size: 33px;
     }
     #score {
       font-size: 50px;
@@ -62,7 +80,7 @@
       font-size: 17px;
     }
     #regle {
-      font-size: 20px;
+      font-size: 23px;
     }
     #score {
       font-size: 35px;
@@ -83,11 +101,11 @@
     #footer {
 	font-size: 14px;
     }
-    #score {
-      font-size: 25px;
-    }
     #regle {
-      font-size: 12px;
+      font-size: 19px;
+    }
+    #score {
+      font-size: 20px;
     }
 }
 @media all and (max-width:319px) {
@@ -105,7 +123,7 @@
 	    font-size: 10px;
     }
     #regle {
-	     font-size: 12px;
+	     font-size: 15px;
     }
     #score {
       font-size:20px;

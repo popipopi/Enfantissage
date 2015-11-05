@@ -1,6 +1,6 @@
 .imageSize{
-  width: 30%; 
-  height: 30%;
+  width: 50%; 
+  height: 50%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   border-radius: 10%;
@@ -21,4 +21,27 @@
 img{
     border:solid 2px #6F6F6F;
     
+}
+
+@media all and (min-width:960px) {
+    #result tr td {
+        font-size: 30px;
+    }
+}
+ 
+@media all and (max-width:959px) and (min-width:560px) {
+    #result tr td {
+        font-size: 25px;
+    }
+}
+ 
+@media all and (max-width:559px) and (min-width:300px) {
+   #result tr td {
+        font-size: 19px;
+    }
+}
+@media all and (max-width:319px) {
+    #result tr td {
+        font-size: 15px;
+    }
 }
